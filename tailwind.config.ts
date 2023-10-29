@@ -6,6 +6,7 @@ const config: Config = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  darkMode: ["class"],
   theme: {
     extend: {
       backgroundImage: {
@@ -18,6 +19,7 @@ const config: Config = {
       },
       colors: {
         'focus-blue': 'rgba(13, 110, 253, .25)',
+        'input-blue': '#0d6efd',
       }
     },
   },

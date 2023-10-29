@@ -1,6 +1,8 @@
 import RadioButton from '@/components/RadioButton'
 import SearchButton from '@/components/SearchButton'
+import ThemeSwitch from '@/components/ThemeSwitch'
 import Image from 'next/image'
+import Dropdown from '@/components/dropdown'
 
 export default function Home() {
   return (
@@ -13,6 +15,7 @@ export default function Home() {
         <p className='font-light italic'>Tìm kiếm trong 303,231 văn bản luật và 70,000 án lệ</p>
         <SearchButton/>
         <RadioButton />
+        <ThemeSwitch />
     </section>
   )
 }

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import './globals.css'
-
+import { ThemeProvider } from './theme-provider';
+import ThemeSwitch from '@/components/ThemeSwitch';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -14,9 +15,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className={`bg-slate-50 dark:bg-[#0d1117]`}>
         <main className='relative flex flex-col items-center justify-center'>
-          {children}
+          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+            {children}
+          </ThemeProvider>
         </main>
       </body>
     </html>
