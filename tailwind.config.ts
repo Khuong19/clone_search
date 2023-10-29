@@ -13,6 +13,12 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      dropShadow: {
+        '3xl': '0 0 0 0.25rem rgba(13, 110, 253, .25)',
+      },
+      colors: {
+        'focus-blue': 'rgba(13, 110, 253, .25)',
+      }
     },
   },
   plugins: [],

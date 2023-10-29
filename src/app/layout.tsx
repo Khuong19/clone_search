@@ -15,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <main className='relative'>
+        <main className='relative flex flex-col items-center justify-center'>
           {children}
         </main>
       </body>
